@@ -1,0 +1,162 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;500;700&family=Inter:wght@400;500;600;700;800;900&family=Lato:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 32px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 32px 0;
+    color: rgb (36, 62, 99);
+}
+
+button {
+    background-color: rgb(100, 21, 255);
+   color: white;
+    padding: 0.75rem 2rem;
+border-radius: 50px;
+}
+
+header {
+    margin : 2rem;
+}
+
+
+/* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV  */
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.treact {
+    font-weight: 900;
+    font-size: 24px;
+    color: #243e63;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    color: rgb(36, 62, 99);
+}
+
+.nav__links {
+display: flex;
+margin: 0 12;
+}
+
+.nav__link {
+    text-decoration: none;
+    margin: 12px ;
+}
+
+/* LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING  */
+
+#landing {
+   height: 100vh;
+   margin: 6rem 0;
+}
+
+.landing__signup {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.text__purp {
+    color: rgb(114, 49, 242);
+}
+
+.landing__email {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+.landing__img--1 {
+    margin-top: 16px 0;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.landing__input {
+    padding : 20px 192px 20px 32px;
+    width: 100%;
+    margin-bottom: 80px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: rgb(118, 118, 118, 0.4);
+position: relative;
+display: flex;
+}
+
+.landing__button {
+    position: absolute;
+    right: 1rem;
+    top: 0.36rem;
+    display: flex;
+}
+
+.customers__para {
+   line-height: 1;
+   color: rgb(160, 174, 192);
+}
+
+
+.landing__img--2 {
+    padding-left: 32px;
+    width: 100%;
+}
