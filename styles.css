@@ -14,16 +14,14 @@ html {
 }
 
 .container {
-    margin: 32px;
+    margin: 96px 32px 96px 32px;
+    padding: 80px 0;
 }
 
 .row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    
 }
 
 li {
@@ -97,11 +95,21 @@ margin: 0 12;
     margin: 12px ;
 }
 
+.section__p {
+    /* padding: 0 200px; */
+    color: rgb(124, 139, 161);
+}
+
 /* LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING  */
 
 #landing {
    height: 100vh;
    margin: 6rem 0;
+}
+
+.row__landing {
+    display: flex;
+    align-items: center;
 }
 
 .landing__signup {
@@ -116,7 +124,7 @@ h1 {
     font-weight: 700;
 }
 
-.text__purp {
+.text--purp {
     color: rgb(114, 49, 242);
 }
 
@@ -130,6 +138,19 @@ h1 {
     margin-top: 16px 0;
     width: 100%;
     opacity: 0.5;
+}
+
+.blob-1 {
+        /* pointer-events: none; */
+        position: absolute;
+        left: -150px;
+        bottom: -55px;
+        z-index: -1;
+        height: 16rem;
+        width: 16rem;
+        /* --tw-translate-x: -66.67%;
+        transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); */
+        opacity: 0.05;
 }
 
 .landing__input {
@@ -160,3 +181,147 @@ display: flex;
     padding-left: 32px;
     width: 100%;
 }
+
+/* FEATURES FEATURES FEATURES FEATURES FEATURES FEATURES FEATURES FEATURES FEATURES FEATURES FEATURES FEATURES  */
+
+/* .features__h2 {
+    /* position: relative; */
+/* } */ 
+
+/* #features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.row__features {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.features__h2 {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+h2
+{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    color: #243e63;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.subheading {
+    margin: 0 0 16px;
+font-size: 16px;
+font-weight: 700;
+letter-spacing: 1.6px;
+/* position: absolute; */
+/* top: -40px; */
+display: flex;
+text-align: center;
+justify-content: center;
+/* left: 250px; */
+}
+
+.services {
+    padding: 8px 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+flex-wrap: wrap;
+}
+
+.service {
+    width: calc(100% / 3);
+    font-size: 24px;
+    font-weight: 700;
+    color: #7c8ba1;
+    display: flex;
+    padding: 32px 46px;
+    position: relative;
+}
+
+
+.services__icon {
+    height: fit-content;
+    border-radius: 50px;
+    border-color: rgb(226, 232, 240);
+    border-style: solid;
+    padding: 20px;
+}
+
+h4 {
+    color: #243e63;
+}
+
+.service__description {
+margin: 0 0 0 16px;
+}
+
+.blob-2 {
+        position: absolute;
+        right: -230px;
+        bottom: -400px;
+        width: 16rem;
+        --tw-translate-x: 8rem;
+        --tw-translate-y: 12rem;
+        opacity: 0.25;
+}
+
+/* QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK  */
+
+.row__quality-work {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.quality-work {
+    display: flex;
+    justify-content: start;
+}
+
+.quality_work__description {
+    width: 45%;
+    text-align: left;
+margin-right: 44px;
+}
+
+.quality-work__img {
+    max-width: 100%;
+    max-width: 650px;
+    border-radius: 0.25rem;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
+}
+    
+    /* .quality-work__figure {
+    position: relative; */
+
+.blob {
+        position: absolute;
+        right: -3%;
+        bottom: -7.5%;
+        z-index: -1;
+        height: 5rem;
+        width: 5rem;
+        /* --tw-translate-x: 50%;
+        transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        --tw-translate-y: 50%; */
+        fill: currentcolor;
+        --tw-text-opacity: 1;
+        color: rgb(100 21 255);
+}
+
