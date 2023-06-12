@@ -49,6 +49,7 @@ header {
 
 .section__column--text {
     width: 50%;
+    padding: 24px;
 }
 
 .section__column--img-wrapper {
@@ -59,6 +60,7 @@ header {
 
 .section__img {
     width: 100%;
+    padding: 24px;
 }
 
 /* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV  */
@@ -238,6 +240,7 @@ h2
     font-size: 3rem;
     font-weight: 900;
     margin-top: 16px;
+    line-height: 1.35;
 }
 
 .subheading {
@@ -476,13 +479,41 @@ transform: translateY(-10px);
 
 /* FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS FAQS  */
 
+.row__subheading {display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
 
+.faqs__p {
 
+    max-width: 600px;
+}
 
 
 /* GET STARTED GET STARTED GET STARTED GET STARTED GET STARTED GET STARTED GET STARTED GET STARTED GET STARTED GET STARTED GET STARTED  */
 
+.row__get-started {
+    border-style: solid;
+    background-color: rgb(114, 49, 242);
+    max-width: 1200px;
+    height: 280px;
+    display: flex;
+    justify-content: center;align-items: center;
+    flex-direction: column;
+}
 
+.get-started__buttons {
+    display: flex;
+    
+}
+
+.get-started__header {
+    font-weight: 800;
+    color: white;
+
+}
 
 
 
