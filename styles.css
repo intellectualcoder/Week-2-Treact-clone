@@ -455,6 +455,7 @@ transform: translateY(-10px);
 
 .pricing__heading {
 text-align: center;
+color: white;
 }
 
 .pricing__cards {
@@ -462,6 +463,7 @@ text-align: center;
 }
 
 .card {
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -473,10 +475,59 @@ text-align: center;
     margin: 16px;
 }
 
+.card__p {
+    color: black;
+}
+
+.card__business {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    border-radius: 20px;
+    border-style: solid;
+    padding: 32px 0;
+    margin: 16px;
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    /* background-position: initial; */
+    background-position: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 21 255 / var(--tw-bg-opacity));
+}
+
 .card__description {
+    color: white;
     padding: 42px;
     text-align: center;
 }
+
+.card__business--h2 {
+    color: white;
+}
+
+.card__business--h4 {
+    color:white;
+}
+
+.button__personal {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.button__business {
+
+}
+
+.button__enterprise {
+
+}
+
 
 /* TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS TESTIMONIALS  */
 
