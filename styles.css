@@ -30,7 +30,7 @@ p {
   font-size: 1.125rem;
   line-height: 1.5;
   margin: 32px 0;
-  color: rgb (36, 62, 99);
+  color: #7c8ba1
 }
 
 button {
@@ -140,6 +140,7 @@ nav {
 
 .section__p {
   color: rgb(124, 139, 161);
+
 }
 
 .btn__menu {
@@ -372,12 +373,14 @@ h4 {
 
 .blob-2 {
   position: absolute;
-  right: -230px;
-  bottom: -400px;
+  right: -300px;
+  bottom: -330px;
   width: 16rem;
   --tw-translate-x: 8rem;
   --tw-translate-y: 12rem;
-  opacity: 0.25;
+  opacity: 0.15;
+  width: 400px; 
+  height: 450px;
 }
 
 /* QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK QUALITY WORK  */
@@ -481,7 +484,8 @@ h5 {
 
 .step__para {
   color: rgb(66, 66, 66);
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   margin: 12px 0 0;
   line-height: 2;
   margin-top: 0.75rem;
@@ -550,7 +554,7 @@ h6 {
   font-size: 1.125rem;
   line-height: 1.5;
   margin: 8px 0;
-  color: rgb(36, 62, 99);
+  color: #7c8ba1;
   max-width: 650px;
   text-align: center;
 }
@@ -569,6 +573,12 @@ h6 {
 
 .card__monthly {
   margin: 8px 0;
+  color: black;
+}
+
+.card__business--monthly {
+  margin: 8px 0;
+  color:white
 }
 
 .card__p {
@@ -666,6 +676,7 @@ hr {
 
 .card__p-business {
   line-height: 0.75;
+  color: white;
 }
 
 .button__business {
@@ -908,7 +919,7 @@ margin-top: 1.25rem;
   border: none;
   background: linear-gradient(
     115deg,
-    rgb(114, 49, 242) 0%,
+    #7231f2 0%,
     rgb(75, 24, 177) 100%
   );
   height: 280px;
@@ -1047,12 +1058,13 @@ li {
   align-items: center;
 }
 
+
 .footer__ul--p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   margin: 32px 0;
-  color: rgb (36, 62, 99);
+  color: white
 }
 
 .footer__ul--a-href {
