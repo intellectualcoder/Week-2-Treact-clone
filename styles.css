@@ -136,7 +136,10 @@ nav {
 .nav__link {
   text-decoration: none;
   margin: 12px;
+  color: #7231f2;
 }
+
+
 
 .section__p {
   color: rgb(124, 139, 161);
@@ -1035,7 +1038,8 @@ li {
   height: 24px;
   width: 24px;
   border-radius: 50px;
-  background-color: white;
+fill: #7231f2;;  
+background-color: rgb(255, 255, 255);
   padding: 5px;
 }
 
