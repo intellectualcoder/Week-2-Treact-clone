@@ -136,8 +136,6 @@ nav {
   color: #7231f2;
 }
 
-
-
 .section__p {
   color: rgb(124, 139, 161);
 
@@ -145,7 +143,7 @@ nav {
 
 .btn__menu {
   background: transparent;
-  font-size: 50px;
+  font-size: 32px;
   border: none;
   color: #7342d6;
   padding: 8px;
@@ -154,7 +152,10 @@ nav {
 
 .menu__backdrop {
   position: absolute;
-  background-color: #7342d6;
+  background: linear-gradient( 180deg, rgb(114, 49, 242) 0%, rgb(84, 3, 245) 100% );  
+  margin: 0 8px;
+  box-shadow: 0px 10px 10px 10px #00000046;
+  border-radius: 24px;
   top: 0;
   left: 0;
   right: 0;
@@ -195,13 +196,29 @@ nav {
 }
 
 .menu__list {
-  padding: 32px 0;
-  font-size: 40px;
+  padding: 8px 0;
+  font-size: 24px;
+  font-weight: 200;
+
 }
 
 .menu__link {
   color: white;
-  font-size: 40px;
+  font-size: 32px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.menu__link--btn {
+    color:white;
+    font-weight: 600;
+    ;
+}
+
+.btn-menu__sign-up {
+    padding: 20px 60px;
+    background: linear-gradient( 180deg,  rgba(101, 211, 245, 0.903) 0%, rgba(154, 107, 247, 0.861)100%);
+    margin-bottom: 8px; 
 }
 
 /* LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING  */
@@ -731,8 +748,8 @@ hr {
 .button__enterprise {
   background: linear-gradient(
     115deg,
-    rgb(254, 178, 178) 100%, 
-    rgb(245, 101, 101) 0%
+    rgb(248, 189, 189) 100%, 
+    rgb(243, 130, 130) 0%
   );
   border-style: none;
   padding: 16px 48px;
@@ -784,12 +801,12 @@ hr {
     position: absolute;
     bottom: 1%;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     z-index: 1;
 }
 
 .slider-nav a {
-    opacity: 0.5;
+    opacity: 0.75;
     transition: opacity ease 300ms;
 }
 
@@ -919,8 +936,8 @@ margin-top: 1.25rem;
 
 .row__cta--footer {
   border: none;
-  background: rgb(114, 49, 242)
-  ;
+  background: rgb(114, 49, 242);
+  box-shadow: 0 15px 10px 5px #00000051;
   height: 280px;
   display: flex;
   justify-content: center;
@@ -1114,6 +1131,7 @@ flex-wrap: wrap;
 
   h1 {
     font-size: 40px;
+    align-items: center;
   }
 
   h2 {
@@ -1230,13 +1248,18 @@ footer {
 }
 
 .slider-nav {
-    bottom: 1%;
+    /* bottom: 1%; */
+    /* transform: translatey(176%); */
 
 }
 
 }
 
 @media (max-width: 550px) {
+
+    h1 {
+        text-align: center;
+    }
 
     .row__testimonials {
         width: 100%;
@@ -1252,7 +1275,7 @@ footer {
     }
 
     .slider-nav {
-        top: 105%;
+        /* top: 105%; */
     }
 
 .row__cta--footer {
@@ -1289,6 +1312,11 @@ justify-content: center;
         top: 250px;
         bottom: 0;
         right: -50px;
+    }
+
+    .step {
+        width: 100%;
+        flex-direction: column;
     }
     }
 
