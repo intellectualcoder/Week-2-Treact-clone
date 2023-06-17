@@ -206,19 +206,22 @@ nav {
   color: white;
   font-size: 32px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 400; 
+  text-decoration: none;
 }
 
 .menu__link--btn {
     color:white;
-    font-weight: 600;
+    font-weight: 600; 
+    text-decoration: none;
     ;
 }
 
 .btn-menu__sign-up {
     padding: 20px 60px;
     background: linear-gradient( 180deg,  rgba(101, 211, 245, 0.903) 0%, rgba(154, 107, 247, 0.861)100%);
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
+   
 }
 
 /* LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING  */
