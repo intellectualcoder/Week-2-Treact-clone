@@ -151,6 +151,8 @@ nav {
 }
 
 .menu__backdrop {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   background: linear-gradient( 180deg, rgb(114, 49, 242) 0%, rgb(84, 3, 245) 100% );  
   margin: 0 8px;
@@ -220,8 +222,8 @@ nav {
 .btn-menu__sign-up {
     padding: 20px 60px;
     background: linear-gradient( 180deg,  rgba(101, 211, 245, 0.903) 0%, rgba(154, 107, 247, 0.861)100%);
-    margin-bottom: 8px;
-   
+    margin: 12px;
+   width: 90%;
 }
 
 /* LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING LANDING  */
@@ -476,14 +478,14 @@ h4 {
     position: relative;
 }
 
-.blob-4 {
+.triangle-2 {
   left: -20%;
   opacity: 0.15;
   position: absolute;
   bottom: -60px;
   z-index: -1;
-  height: 250px;
-  width: 300px;
+  height: 220px;
+  width: 280px;
   transform: rotate(59deg);
   color: rgb(100 21 255);
 }
@@ -569,7 +571,7 @@ h6 {
   align-items: center;
 }
 
-.pricing__heading--p {
+.section__p {
   display: flex;
   justify-content: center;
   font-weight: 400;
@@ -770,10 +772,12 @@ hr {
 }
 
 .slide-wrapper {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     margin: 0 auto;
     height: 500px;
+    position: relative;
+
 }
 
 .slider {
@@ -802,9 +806,9 @@ hr {
     display: flex;
     column-gap: 1rem;
     position: absolute;
-    bottom: 1%;
-    left: 50%;
-    /* transform: translateX(-50%); */
+
+    bottom: 10%;
+right: 0;
     z-index: 1;
 }
 
@@ -919,7 +923,6 @@ margin-top: 1.25rem;
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
     display: block;
-    vertical-align: middle;
     /* transform: rotate(-180deg) translateZ(0px); */
 }
 
@@ -1101,6 +1104,40 @@ background-color: rgb(255, 255, 255);
 /* RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS   */
 /* @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA @ MEDIA  */
 
+@media (max-width: 1012px) {
+
+  .row__landing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blob {
+    width: 60%;
+    height: 40%;
+    top: 40%;
+    bottom: 0;
+    right: -50px;
+}
+
+.triangle-2 {
+  left: -20%;
+  opacity: 0.15;
+  position: absolute;
+  top: 40%;
+  z-index: -1;
+  height: 200px;
+  width: 250px;
+}
+
+.slider-nav {
+  column-gap: 0.5rem;
+  /* bottom: 0; */
+  right: 0;
+  /* left: 0; */
+}
+
+}
+
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 768px) {
     .btn__menu {
@@ -1110,11 +1147,6 @@ background-color: rgb(255, 255, 255);
     .nav__links {
       display: none;
     }
-
-  .row__landing {
-    display: flex;
-    flex-direction: column;
-  }
 
   .services {
 flex-direction: row;
@@ -1178,9 +1210,9 @@ align-items: center;}
 }
 
 .blob {
-    width: 200px;
-    height: 150px;
-    top: 400px;
+    width: 40%;
+    height: 60%;
+    top: 70%;
     bottom: 0;
     right: -50px;
 }
@@ -1192,6 +1224,7 @@ align-items: center;}
 .section__column--text {
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 h2 {
@@ -1250,13 +1283,38 @@ footer {
     width: 80%;
 }
 
+.triangle-2 {
+  left: -20%;
+  opacity: 0.15;
+  position: absolute;
+  top: 40%;
+  z-index: -1;
+  height: 160px;
+  width: 210px;
+}
+
 .slider-nav {
-    /* bottom: 1%; */
-    /* transform: translatey(176%); */
-
+  column-gap: 0.5rem;
+  right: 0;
+  bottom: 3%;
 }
 
 }
+
+
+
+@media (max-width: 650px) 
+{.triangle-2 {
+  left: -20%;
+  opacity: 0.15;
+  position: absolute;
+  top: 5%;
+  z-index: -1;
+  height: 130px;
+  width: 180px;
+}
+}
+
 
 @media (max-width: 550px) {
 
@@ -1275,10 +1333,6 @@ footer {
 
     .section__column--text {
         padding: 0%;
-    }
-
-    .slider-nav {
-        /* top: 105%; */
     }
 
 .row__cta--footer {
@@ -1312,18 +1366,25 @@ justify-content: center;
 
     .blob {
         
-        top: 250px;
+        top: 70%;
         bottom: 0;
-        right: -50px;
+        right: -10%;
     }
 
     .step {
         width: 100%;
         flex-direction: column;
     }
+    .slider-nav {
+      column-gap: 0.5rem;
+      right: 0;
+      bottom: 5%;
+    }
+
     }
 
 @media (max-width: 520px) {
+
     .section__column--text {
 width: 100%;
     }
